@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Panel Campus Party</title>
+    <link href="../../assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="../../assets/css/admin/admin-menu.css" rel="stylesheet">
+    <link href="../../assets/css/admin/admin-usuarios.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet"/>
+  </head>
+
+  <body id="body-pd">
+    <header class="header" id="header">
+      <div class="header_toggle">
+        <i class="bx bx-menu" id="header-toggle"></i>
+      </div>
+      <div class="header_img">
+        <img src="../../assets/src/usericon.png" alt="" />
+      </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+      <nav class="nav">
+        <div>
+          <a href="#" class="nav_logo">
+            <i class="bx bx-layer nav_logo-icon"></i>
+            <span class="nav_logo-name">Campus Party</span>
+          </a>
+          <div class="nav_list">
+            <a href="../admin/admin-eventos.html" class="nav_link">
+              <i class="bx bx-grid-alt nav_icon"></i>
+              <span class="nav_name">Eventos</span>
+            </a>
+            <a href="../admin/admin-usuarios.html" class="nav_link active">
+              <i class="bx bx-user nav_icon"></i>
+              <span class="nav_name">Usuarios</span>
+            </a>
+            <a href="#" class="nav_link">
+              <i class="bx bx-bar-chart-alt-2 nav_icon"></i>
+              <span class="nav_name">Estadísticas</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="../../assets/src/usericon.png" alt="" width="32" height="32" class="rounded-circle me-2">
+              <strong>Configuración</strong>
+            </a>
+            <ul class="dropdown-menu text-small shadow">
+              <li><a class="dropdown-item" href="../frontal/index.html">Inicio</a></li>
+              <li><a class="dropdown-item" href="#">Configuración</a></li>
+              <li><a class="dropdown-item" href="#">Mis eventos</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+            </ul>
+          </div>
+
+      </nav>
+
+
+
+    </div>
+
+    <div class="height-100 bg-light">
+      <!--TODO CONTENIDO-->
+
+      <!--TODO ADMINISTRADOR EVENTOS-->
+        <div class="container">
+            <h2>Nombre del usuario</h2>
+            <div class="row">
+              <div class="col-12">
+                <div class="mb-3">
+                    <label for="Cuenta" class="form-label">Cuenta</label>
+                    <input type="text" class="form-control" id="Cuenta" value="Cuenta" disabled>
+                </div>
+                <div class="mb-3 d-flex justify-content-between">
+                    <div class="col-3">
+                        <label for="TDoc" class="form-label">Tipo de Documento</label>
+                        <input type="text" class="form-control" id="TDoc" value="CC" disabled>
+                    </div>
+                    <div class="col-5">
+                        <label for="Doc" class="form-label">Documento</label>
+                        <input type="text" class="form-control" id="Doc" value="848948949" disabled>
+                    </div>
+                    <div class="col-3">
+                        <label for="Telefono" class="form-label">Fecha Nacimiento</label>
+                        <input type="date" class="form-control" id="Telefono" value="10/04/2022" disabled>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="Correo" class="form-label">Correo</label>
+                    <input type="text" class="form-control" id="Correo" value="asdlakjdladj@gmail.com" disabled>
+                </div>
+                <div class="mb-3">
+                    <label for="Telefono" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" id="Telefono" value="2569874156" disabled>
+                </div>
+                <div class="mb-3 d-flex justify-content-between">
+                    <div class="col-5">
+                        <label for="Ciudad" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="Ciudad" value="Medellin" disabled>
+                    </div>
+                    <div class="col-5">
+                        <label for="NU" class="form-label">Numero de universidades</label>
+                        <input type="text" class="form-control" id="NU" value="250" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!--MODALES-->
+    <div class="modal fade" id="warningModal" tabindex="-1" aria-labelledby="warningModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="warningModalLabel">Remover usuario de evento</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>¿ Estás seguro que deseas quitar este usuario del evento ?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-warning">Confirmar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="dangerModal" tabindex="-1" aria-labelledby="dangerModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="dangerModalLabel">Eliminación elemento</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ¿ Estás seguro que deseas eliminar este elemento ?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-danger">Confirmar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="bindUsersWithEventModal" tabindex="-1" aria-labelledby="bindUsersWithEventModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bindUsersWithEventModalLabel">Vincular usuarios a evento</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="container">
+                  <div class="form-group">
+                      <label for="search-user" class="col-form-label">Buscar...</label>
+                      <input type="text" class="form-control" id="search-user">
+                    </div>
+                  <div class="users-container">
+                      <p class="modal-list-item selected-item">juan1234@gmail.com</p>
+                      <p class="modal-list-item">juan1234@gmail.com</p>
+                      <p class="modal-list-item">juan1234@gmail.com</p>
+                      <p class="modal-list-item">juan1234@gmail.com</p>
+                      <p class="modal-list-item">juan1234@gmail.com</p>
+                      <p class="modal-list-item">juan1234@gmail.com</p>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn btn-primary">Confirmar</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+    <script src="../../assets/js/bootstrap/bootstrap.bundle.js"></script>
+    <script src="../../assets/js/admin/menu/admin-menu.js"></script>
+  </body>
+</html>

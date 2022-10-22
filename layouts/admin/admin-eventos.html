@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Panel Campus Party</title>
+    <link href="../../assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="../../assets/css/admin/admin-menu.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet"/>
+  </head>
+
+  <body id="body-pd">
+    <header class="header" id="header">
+      <div class="header_toggle">
+        <i class="bx bx-menu" id="header-toggle"></i>
+      </div>
+      <div class="header_img">
+        <img src="../../assets/src/usericon.png" alt="" />
+      </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+      <nav class="nav">
+        <div>
+          <a href="#" class="nav_logo">
+            <i class="bx bx-layer nav_logo-icon"></i>
+            <span class="nav_logo-name">Campus Party</span>
+          </a>
+          <div class="nav_list">
+            <a href="../admin/admin-eventos.html" class="nav_link active">
+              <i class="bx bx-grid-alt nav_icon"></i>
+              <span class="nav_name">Eventos</span>
+            </a>
+            <a href="../admin/admin-usuarios.html" class="nav_link">
+              <i class="bx bx-user nav_icon"></i>
+              <span class="nav_name">Usuarios</span>
+            </a>
+            <a href="#" class="nav_link">
+              <i class="bx bx-bar-chart-alt-2 nav_icon"></i>
+              <span class="nav_name">Estadísticas</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="../../assets/src/usericon.png" alt="" width="32" height="32" class="rounded-circle me-2">
+              <strong>Configuración</strong>
+            </a>
+            <ul class="dropdown-menu text-small shadow">
+              <li><a class="dropdown-item" href="../frontal/index.html">Inicio</a></li>
+              <li><a class="dropdown-item" href="#">Configuración</a></li>
+              <li><a class="dropdown-item" href="#">Mis eventos</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+            </ul>
+          </div>
+
+      </nav>
+
+
+
+    </div>
+
+    <div class="height-100 bg-light">
+      <!--TODO ADMINISTRADOR EVENTOS-->
+        <div class="container">
+          
+          <h2>Administrar Eventos</h2>
+          <div class="top-table-container mt2">
+            <a class="btn btn-primary" href="../admin/admin-crear-evento.html">Crear Evento</a>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 p-2">
+              <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Descripción</th>
+                    <th scope="col">Temas</th>
+                    <th scope="col">Ubicacion</th>
+                    <th scope="col">Inicio</th>
+                    <th scope="col">Fin</th>
+                    <th scope="col-2" class="text-center">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="col">Extrella Software</th>
+                    <td scope="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse accusantium</td>
+                    <td scope="col">@Software, @Renovación</td>
+                    <td scope="col">Colombia, Antioquia, Medellin, Carrera 35 # 21-12</td>
+                    <td scope="col">2022-10-10</td>
+                    <td scope="col">2022-10-20</td>
+                    <td colspan="2" class="align-middle">
+                      <div class="d-flex justify-content-center h-100">
+                        <a class="btn btn-info btn-sm m-1" href="../admin/admin-editar-evento.html">Editar</a>
+                        <button type="button" class="btn btn-danger btn-sm m-1" data-bs-toggle="modal" data-bs-target="#dangerModal">Eliminar</button>
+                        <div class="dropdown m-1">
+                          <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class='bx bxs-brightness'></i> Más Acciones
+                          </button>
+                          <ul class="dropdown-menu text-small shadow">
+                            <li><a class="dropdown-item" href="../admin/admin-pabellones-evento.html">Gestionar Pabellones</a></li>
+                            <li><a class="dropdown-item" href="../admin/admin-equipos-evento.html">Gestionar Equipos</a></li>
+                            <li><a class="dropdown-item" href="../admin/admin-evento-ver-usuario.html">Ver Usuarios</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <th scope="col">Extrella Software</th>
+                    <td scope="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse accusantium</td>
+                    <td scope="col">@Software, @Renovación</td>
+                    <td scope="col">Colombia, Antioquia, Medellin, Carrera 35 # 21-12</td>
+                    <td scope="col">2022-10-10</td>
+                    <td scope="col">2022-10-20</td>
+                    <td colspan="2" class="align-middle">
+                      <div class="d-flex justify-content-center h-100">
+                        <a class="btn btn-info btn-sm m-1" href="../admin/admin-editar-evento.html">Editar</a>
+                        <button type="button" class="btn btn-danger btn-sm m-1" data-bs-toggle="modal" data-bs-target="#dangerModal">Eliminar</button>
+                        <div class="dropdown m-1">
+                          <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class='bx bxs-brightness'></i> Más Acciones
+                          </button>
+                          <ul class="dropdown-menu text-small shadow">
+                            <li><a class="dropdown-item" href="../admin/admin-pabellones-evento.html">Gestionar Pabellones</a></li>
+                            <li><a class="dropdown-item" href="../admin/admin-equipos-evento.html">Gestionar Equipos</a></li>
+                            <li><a class="dropdown-item" href="../admin/admin-evento-ver-usuario.html">Ver Usuarios</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="col">Extrella Software</th>
+                    <td scope="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse accusantium</td>
+                    <td scope="col">@Software, @Renovación</td>
+                    <td scope="col">Colombia, Antioquia, Medellin, Carrera 35 # 21-12</td>
+                    <td scope="col">2022-10-10</td>
+                    <td scope="col">2022-10-20</td>
+                    <td colspan="2" class="align-middle">
+                      <div class="d-flex justify-content-center h-100">
+                        <a class="btn btn-info btn-sm m-1" href="../admin/admin-editar-evento.html">Editar</a>
+                        <button type="button" class="btn btn-danger btn-sm m-1" data-bs-toggle="modal" data-bs-target="#dangerModal">Eliminar</button>
+                        <div class="dropdown m-1">
+                          <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class='bx bxs-brightness'></i> Más Acciones
+                          </button>
+                          <ul class="dropdown-menu text-small shadow">
+                            <li><a class="dropdown-item" href="../admin/admin-pabellones-evento.html">Gestionar Pabellones</a></li>
+                            <li><a class="dropdown-item" href="../admin/admin-equipos-evento.html">Gestionar Equipos</a></li>
+                            <li><a class="dropdown-item" href="../admin/admin-evento-ver-usuario.html">Ver Usuarios</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="col">Extrella Software</th>
+                    <td scope="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse accusantium</td>
+                    <td scope="col">@Software, @Renovación</td>
+                    <td scope="col">Colombia, Antioquia, Medellin, Carrera 35 # 21-12</td>
+                    <td scope="col">2022-10-10</td>
+                    <td scope="col">2022-10-20</td>
+                    <td colspan="2" class="align-middle">
+                      <div class="d-flex justify-content-center h-100">
+                        <a class="btn btn-info btn-sm m-1" href="../admin/admin-editar-evento.html">Editar</a>
+                        <button type="button" class="btn btn-danger btn-sm m-1" data-bs-toggle="modal" data-bs-target="#dangerModal">Eliminar</button>
+                        <div class="dropdown m-1">
+                          <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class='bx bxs-brightness'></i> Más Acciones
+                          </button>
+                          <ul class="dropdown-menu text-small shadow">
+                            <li><a class="dropdown-item" href="../admin/admin-pabellones-evento.html">Gestionar Pabellones</a></li>
+                            <li><a class="dropdown-item" href="../admin/admin-equipos-evento.html">Gestionar Equipos</a></li>
+                            <li><a class="dropdown-item" href="../admin/admin-evento-ver-usuario.html">Ver Usuarios</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="dangerModal" tabindex="-1" aria-labelledby="dangerModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="dangerModalLabel">Eliminación elemento</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ¿ Estás seguro que deseas eliminar este elemento ?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-danger">Confirmar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../assets/js/bootstrap/bootstrap.bundle.js"></script>
+    <script src="../../assets/js/admin/menu/admin-menu.js"></script>
+  </body>
+</html>
